@@ -1,4 +1,5 @@
-import * as React from "react";
+import React from "react";
+import PropTypes from "prop-types";
 
 export const ClassRoomIcon = props => {
   const { width, height, color } = props;
@@ -990,4 +991,10 @@ export const ClassRoomIcon = props => {
       <use xlinkHref="#prefix__cl" mask="url(#prefix__cm)" />
     </svg>
   );
+};
+
+ClassRoomIcon.propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number,
+  color: PropTypes.string
 };

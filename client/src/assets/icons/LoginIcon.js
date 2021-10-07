@@ -1,4 +1,5 @@
-import * as React from "react";
+import React from "react";
+import PropTypes from "prop-types";
 
 export const LoginIcon = props => {
   const { width, height, color } = props;
@@ -199,4 +200,10 @@ export const LoginIcon = props => {
       />
     </svg>
   );
+};
+
+LoginIcon.propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number,
+  color: PropTypes.string
 };

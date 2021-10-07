@@ -1,4 +1,5 @@
-import * as React from "react";
+import React from "react";
+import PropTypes from "prop-types";
 
 export const ChatRoomIcon = props => {
   const { width, height, color } = props;
@@ -122,4 +123,10 @@ export const ChatRoomIcon = props => {
       </defs>
     </svg>
   );
+};
+
+ChatRoomIcon.propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number,
+  color: PropTypes.string
 };
